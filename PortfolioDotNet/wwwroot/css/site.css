@@ -35,3 +35,14 @@ textarea {
         display: none;
     }
 }
+
+img {
+	float: right;
+	border-radius: 30%;
+}
+
+.jumbotron {
+	background-color: #ffcc99;
+	text-align: left;
+
+}

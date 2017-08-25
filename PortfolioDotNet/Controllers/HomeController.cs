@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PortfolioDotNet.Models;
+using PortfolioDotnet.Controllers;
+
 
 namespace PortfolioDotNet.Controllers
 {
@@ -27,7 +30,8 @@ namespace PortfolioDotNet.Controllers
             return View();
         }
 
-        public IActionResult Error()
+
+			public IActionResult Error()
         {
             return View();
         }

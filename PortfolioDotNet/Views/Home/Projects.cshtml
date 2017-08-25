@@ -1,17 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Projects";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	//ViewBag.Title = "Portfolio - Projects";
+}
+@using PortfolioDotNet.Models
+@model List<Projects>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="intro">
+	<h3>Click the button below to see my most-starred projects on GitHub</h3>
+	<form asp-controller="Projects" asp-action="GetProjects">
+		<div class="show-projects">
+			<input type="submit" class="btn" value="Get projects" />
+		</div>
+	</form>
+</div>

@@ -1,0 +1,20 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	//ViewBag.Title = "Portfolio - Starred Repositories";
+}
+
+@using PortfolioDotNet.Models
+@model List<Projects>
+
+<div class="intro">
+	<h3>Here are my most-starred projects</h3>
+	<div>
+		<ul>
+			@foreach (var project in Model)
+			{
+				<li>
+					<a href="@project.html_url">@Html.DisplayFor(modelItem => project.Name)</a>
+				</li>
+			}
+		</ul>
+	</div>

@@ -20,7 +20,7 @@ namespace PortfolioDotNet.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Projects()
         {
             ViewData["Message"] = "Your contact page.";
 
